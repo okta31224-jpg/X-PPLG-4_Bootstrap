@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Containers -->
+    <div class="container mt-3">
+        <p>Ini container biasa</p>
+    </div>
+    <div class="container-fluid bg-light mt-3">
+        <p>Ini container fluid</p>
+    </div>
+
+    <!-- Grid System sistem baris dan kolom -->
+    <!-- Column -->
+     <div class="container">
+        <div class="row">
+            <div class="col">kolom 1</div>
+            <div class="col">kolom 2</div>
+            <div class="col">kolom 3</div>
+        </div>
+     </div>
+     <!-- row -->
+      <div class="row">
+        <div class="col-6 border">lebar 6/12</div>
+        <div class="col-3 border">lebar 3/12</div>
+        <div class="col-3 border">lebar 3/12</div>
+      </div>
+      <!-- columns-lebih detail -->
+       <div class="container mt-4">
+        <h2 class="text-center mb-4">
+            Bootstrap 5.2 - offset, order dan vertical alignment
+        </h2>
+
+        <!-- OFFSET -->
+         <h4>1. offset (memberi jarak dari kiri)</h4>
+         <div class="row mb-5">
+            <div class="col-4 offset-4 border p-3 text-center">
+                kolom tengah<br />
+                col-4 + offset-4
+            </div>
+         </div>
+
+         <!-- ORDER -->
+          <h4>2. order </h4>
+          <div class="row mb-5">
+            <div class="col-4 order-3 border p-3">kolom 1 (order-3)</div>
+            <div class="col-4 order-1 border p-3">kolom 2 (order-1)</div>
+            <div class="col-4 order-2 border p-3">kolom 3 (order-2)</div>
+          </div>
+          <!-- VERTICAL ALIGNMENT -->
+           <h4>3. vertical alignment (rata atas, tengah, bawah)</h4>
+           <div class="row align-items-start mb-3" style="height: 120px;">
+            <div class="col border p-2">atas</div>
+            <div class="col border p-4">atas</div>
+           </div>
+
+           <div class="row align-items-center mb-3" style="height: 120px;">
+            <div class="col border p-2">tengah</div>
+            <div class="col border p-4">tengah</div>
+           </div>
+
+           <div class="row align-items-end mb-5" style="height: 120px;">
+            <div class="cow border p-2">bawah</div>
+            <div class="col border p-4">bawah</div>
+           </div>
+       </div>
+
+       <!-- gutter -->
+        <div class="row g-3">
+            <div class="col">kolom A</div>
+            <div class="col">kolom B</div>
+        </div>
+        
+        <!-- css grid -->
+         <div class="d-grid gap-2">
+            <button class="btn btn-primary">tombol 1</button>
+            <button class="btn btn-secondary">tombol 2</button>
+         </div>
+</body>
+</html>
